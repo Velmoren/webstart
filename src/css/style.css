@@ -7,7 +7,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1160px;
   margin: auto;
 }
 
@@ -24,11 +24,18 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .container {
+    max-width: 400px;
+    width: 85%;
+  }
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 30px;
+  padding: 18px 28px;
 }
 
 .navbar {
@@ -57,6 +64,10 @@ img {
   text-align: right;
 }
 
+.navbar__address {
+  font-size: 13px;
+}
+
 .navbar__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +80,7 @@ img {
 
 .navbar__button {
   margin-left: 30px;
+  font-size: 13px;
 }
 
 .navbar__phone {
@@ -85,11 +97,18 @@ img {
     display: none;
   }
   .navbar__button {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 400;
     padding: 15px 26px;
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+@media (max-width: 567px) {
+  .navbar {
+    padding: 17px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
