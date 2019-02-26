@@ -35,7 +35,7 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 28px;
+  padding: 18px 28px 18px 35px;
 }
 
 .navbar {
@@ -113,7 +113,7 @@ img {
 }
 
 .hero {
-  padding: 50px 0;
+  padding: 45px 0;
   background-color: #f5f5f5;
 }
 
@@ -124,9 +124,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
-  padding-right: 120px;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 .hero-text__title {
@@ -140,7 +139,11 @@ img {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
+}
+
+.hero-image__img {
+  margin-left: 100px;
 }
 
 .hero-list {
@@ -180,28 +183,61 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .hero-image__img {
+    margin: auto;
+  }
   .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero-list {
     margin-bottom: 44px;
   }
   .hero-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
     padding-right: 10px;
+  }
+  .hero-text__title {
+    width: 70%;
+    text-align: left;
+  }
+  .hero-text__subtitle {
+    width: 70%;
+    text-align-last: left;
   }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 49px 0;
+  }
+  .hero-image__img {
+    margin: auto;
+  }
   .hero-text__title {
+    width: 100%;
     font-size: 22px;
     line-height: 1.4;
     margin-top: -10px;
     margin-bottom: 7px;
   }
   .hero-text__subtitle {
+    width: 100%;
     font-size: 16px;
     margin-bottom: 26px;
   }
@@ -209,7 +245,8 @@ img {
     margin-bottom: 36px;
   }
   .hero-list__item {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    margin-right: 3px;
   }
   .hero-list__text {
     font-size: 12px;

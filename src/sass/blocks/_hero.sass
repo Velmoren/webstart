@@ -1,12 +1,10 @@
 .hero
-  padding: 50px 0
+  padding: 45px 0
   background-color: $background-gray
   &-block
     display: flex
   &-text
-    flex-basis: 42%
-    padding-right: 120px
-
+    flex-basis: 45%
     &__title
       font-size: 41px
       font-weight: 700
@@ -16,7 +14,10 @@
       display: inline-block
       font-size: 20px
       font-weight: 500
-      margin-bottom: 65px
+      margin-bottom: 70px
+  &-image
+    &__img
+      margin-left: 100px
   &-list
     margin: 0
     padding: 0
@@ -37,31 +38,53 @@
       max-width: 300px
 @media (max-width: 1200px)
   .hero
+    &-image
+      &__img
+        margin: auto
     &-block
       flex-direction: column
+      align-items: center
     &-list
       margin-bottom: 44px
     &-text
+      display: flex 
+      flex-direction: column
+      align-items: center
+      text-align: left
       padding-right: 10px
+      &__title
+        width: 70%
+        text-align: left
+      &__subtitle
+        width: 70%
+        text-align-last: left
 @media (max-width: 768px)
   .hero
+    padding: 49px 0
+    &-image
+      &__img
+        margin: auto
     &-text
       &__title
+        width: 100%
         font-size: 22px
         line-height: 1.4
         margin-top: -10px
         margin-bottom: 7px
       &__subtitle
+        width: 100%
         font-size: 16px
         margin-bottom: 26px
     &-list
       margin-bottom: 36px
       &__item
-        margin-bottom: 15px
+        margin-bottom: 16px
+        margin-right: 3px
       &__text
         font-size: 12px
         max-width: 200px
       &__image
+        margin-top: 
         margin-right: 15px
 
 
