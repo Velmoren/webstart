@@ -5,37 +5,48 @@
     display: flex
   &-text
     flex-basis: 45%
+    margin-top: 3px
+    margin-left: -3px
     &__title
       font-size: 41px
+      font-family: 'Museo Sans Cyrl 700'
       font-weight: 700
       line-height: 55px
       margin-bottom: 37px
     &__subtitle
       display: inline-block
       font-size: 20px
-      font-weight: 500
-      margin-bottom: 70px
+      font-family: 'Museo Sans Cyrl 700'
+      font-weight: 700
+      margin-left: 3px
+      margin-bottom: 67px
   &-image
     &__img
-      margin-left: 100px
+      margin-left: 75px
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.05)
   &-list
     margin: 0
     padding: 0
+    margin-left: 3px
+    margin-top: 1px
     &__item
       display: flex
       align-items: center   
-      margin-bottom: 27px
+      margin-bottom: 26px
     &__image
-      width: 40px
-      height: 40px
+      width: 36px
+      height: 36px
       border: 2px solid $main-color
       display: flex
       align-items: center
       justify-content: center
       border-radius: 50%
-      margin-right: 30px
+      margin-right: 29px
     &__text
-      max-width: 300px
+      max-width: 250px
+      line-height: 1.7
+      font-family: 'Museo Sans Cyrl 300'
+      font-size: 14px
 @media (max-width: 1200px)
   .hero
     &-image
@@ -63,29 +74,52 @@
     padding: 49px 0
     &-image
       &__img
+        width: 500px
+        height: 430px
         margin: auto
     &-text
       &__title
-        width: 100%
-        font-size: 22px
-        line-height: 1.4
+        width: 400px
+        font-size: 24px
+        text-align: center
+        line-height: 1.2
         margin-top: -10px
-        margin-bottom: 7px
+        margin-bottom: 9px
       &__subtitle
-        width: 100%
+        width: 400px
         font-size: 16px
-        margin-bottom: 26px
+        line-height: 1.2
+        margin-bottom: 25px
     &-list
       margin-bottom: 36px
       &__item
-        margin-bottom: 16px
-        margin-right: 3px
+        margin-bottom: 21px
       &__text
         font-size: 12px
         max-width: 200px
       &__image
-        margin-top: 
         margin-right: 15px
+@media (min-width: 320px) and (max-width: 567px)
+  .hero
+    &-text
+      max-width: 310px
+      &__title
+        text-align: left
+        margin-left: 36px
+        margin-top: -13px
+        width: 290px
+      &__subtitle
+        width: 262px
+        margin-left: 13px
+    &-image
+      &__img
+        width: 272px
+        height: 233px
+        margin-top: -5px
+    &-list
+      margin-bottom: 20px
+      &__text
+        line-height: 1.2
 
 
 
