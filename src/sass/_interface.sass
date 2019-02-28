@@ -12,6 +12,7 @@ img
   background-color: $main-color
   border: none
   padding: 18px 28px 18px 30px
+  outline: none
   &:hover
     background-color: lighten($main-color, 10%)
     cursor: pointer
@@ -28,6 +29,9 @@ img
   border-radius: 10px
   padding: 23px 25px
   font-size: 15px
+  outline: none
+  &:focus
+    border: 1px solid $main-color
 
 
 @media (max-width: 1200px)
