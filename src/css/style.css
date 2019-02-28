@@ -375,7 +375,7 @@ img {
 .offer:before {
   content: '';
   position: absolute;
-  width: 51.2%;
+  width: 50%;
   height: 100%;
   background-color: white;
   top: 0;
@@ -501,6 +501,14 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #fff;
+  }
+  .offer__title {
+    text-align: center;
+    max-width: 540px;
+  }
+  .offer__subtitle {
+    text-align: center;
+    max-width: 540px;
   }
   .offer-block {
     width: 100%;
