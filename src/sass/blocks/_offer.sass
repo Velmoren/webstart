@@ -1,7 +1,7 @@
 .offer
   background: url('../img/offer/offer-image.png') no-repeat
   background-position: center right
-  background-size: contain
+  background-size: 50%
   position: relative
   &:before
     content: ''
@@ -19,7 +19,7 @@
     max-width: 360px
     line-height: 35px;
     margin-bottom: 20px
-    margin-top: -15px
+    margin-top: -8px
   &__subtitle
     display: block
     max-width: 250px
@@ -62,12 +62,15 @@
       font-size: 15px
       line-height: 27px
       margin-left: -2px
-
+@media (max-width: 1900px)
+  .offer
+    background-size: contain
 @media (max-width: 1200px)
   .offer
     background-size: cover
     &__title
       line-height: 1.2
+      font-size: 20px
     &__button
       font-size: 16px
     &__input
@@ -89,11 +92,14 @@
   .offer
     background: #fff
     &__title
+      max-width: 100%
+      font-size: 24px
       text-align: center
-      max-width: 540px
     &__subtitle
+      max-width: 100%
       text-align: center
-      max-width: 540px
+    &__input
+      width: 262px
     &-block
       width: 100%
       padding-right: 0
@@ -109,14 +115,16 @@
 @media (min-width: 320px) and (max-width: 567px)
   .offer
     &__title
+      text-align: left
       font-size: 18px
       line-height: 1.2
       margin-bottom: 19px
       width: 270px
       padding-top: 11px
     &__subtitle
+      text-align: left
       font-size: 14px
-      margin-bottom: 27px
+      margin-bottom: 28px
     &__button
       font-size: 14px
       padding: 3px 34px 0 40px

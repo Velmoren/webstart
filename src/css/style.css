@@ -36,7 +36,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 83px 0;
 }
 
 .section-title {
@@ -368,7 +368,7 @@ img {
 .offer {
   background: url("../img/offer/offer-image.png") no-repeat;
   background-position: center right;
-  background-size: contain;
+  background-size: 50%;
   position: relative;
 }
 
@@ -392,7 +392,7 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 20px;
-  margin-top: -15px;
+  margin-top: -8px;
 }
 
 .offer__subtitle {
@@ -466,12 +466,19 @@ img {
   margin-left: -2px;
 }
 
+@media (max-width: 1900px) {
+  .offer {
+    background-size: contain;
+  }
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
   }
   .offer__title {
     line-height: 1.2;
+    font-size: 20px;
   }
   .offer__button {
     font-size: 16px;
@@ -503,12 +510,16 @@ img {
     background: #fff;
   }
   .offer__title {
+    max-width: 100%;
+    font-size: 24px;
     text-align: center;
-    max-width: 540px;
   }
   .offer__subtitle {
+    max-width: 100%;
     text-align: center;
-    max-width: 540px;
+  }
+  .offer__input {
+    width: 262px;
   }
   .offer-block {
     width: 100%;
@@ -535,6 +546,7 @@ img {
 
 @media (min-width: 320px) and (max-width: 567px) {
   .offer__title {
+    text-align: left;
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 19px;
@@ -542,8 +554,9 @@ img {
     padding-top: 11px;
   }
   .offer__subtitle {
+    text-align: left;
     font-size: 14px;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
   .offer__button {
     font-size: 14px;
@@ -617,5 +630,18 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.scrollup {
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../img/scroll/icon_top.png") no-repeat;
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */
