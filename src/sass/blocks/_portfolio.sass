@@ -1,0 +1,62 @@
+.portfolio
+  background: $background-gray url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
+  background-size: 50%
+  &__title
+    max-width: 800px
+    margin: auto
+    margin-top: 11px
+    margin-bottom: 92px
+    color: $text-color
+    font-size: 30px
+    line-height: 45px
+    font-family: 'Museo Sans Cyrl 700'
+    font-weight: 700
+  &__arrows
+    max-width: 120px
+    margin: auto
+    margin-top: 68px
+    display: flex
+    justify-content: space-between
+.slider
+  &__image
+    margin: auto
+
+@media (max-width: 1200px)
+  .portfolio
+    &__title
+      margin-top: -10px
+      font-size: 26px
+      line-height: 26px
+    &__arrows
+      margin-top: 40px
+    .slider
+      margin: auto
+      margin-top: -30px
+@media (max-width: 768px)
+  .portfolio
+    &__title
+      margin-top: -10px
+      font-size: 20px
+      line-height: 26px
+    &__arrows
+      margin-top: 32px
+    .slider
+      margin: auto
+      margin-top: -52px
+      max-width: 500px
+@media (min-width: 320px) and (max-width: 567px)
+  .portfolio
+    &__title
+      margin-top: -15px
+      font-size: 18px
+      line-height: 22px
+    &__arrows
+      margin-top: 28px
+  .slider
+    max-width: 246px
+    margin: auto
+    margin-top: -52px
+
+
+
+    

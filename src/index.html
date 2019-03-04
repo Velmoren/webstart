@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
 </head>
 
 <body>
@@ -107,22 +108,85 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
-  </main>
 
-  <div class="modal" id="modal">
-    <div class="modal-dialog">
-      <button class="modal-dialog__close" id="close">&times;</button>
-      <h4 class="modal-dialog__title">всплывающее окно</h4>
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">
+          Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах
+        </h2>
+        <div class="slider owl-carousel">
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="slide"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="slide"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="slide"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="slide"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="slide"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="slide"></div>
+          <!-- /.slider__item -->
+        </div>
+        <!-- /.slider -->
+        <div class="arrows portfolio__arrows">
+          <div class="arrows__left">
+            <img src="img/portfolio/slider-arrow-1.png" alt="">
+          </div>
+          <div class="arrows__right">
+            <img src="img/portfolio/slider-arrow-2.png" alt="">
+          </div>
+        </div>
+        <!-- /.section-title portfolio-title -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section porfolio -->
+
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__title">всплывающее окно</h4>
+      </div>
+      <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal-dialog -->
-  </div>
-  <a href="#" class="scrollup">Наверх</a>
-  <!-- /.modal -->
-  <!-- <script src="js/main.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/scroll.js"></script>
+    <a href="#" class="scrollup">Наверх</a>
+    <!-- /.modal -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      // Переназначаем кнопки, отключив nav
+      $('.arrows__right').click(function () {
+        $('.owl-carousel').trigger('next.owl.carousel', [1000]);
+      })
+
+      $('.arrows__left').click(function () {
+        $('.owl-carousel').trigger('prev.owl.carousel', [1000]);
+      })
+
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplaySpeed: 1000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1200: {
+            items: 3
+          }
+        }
+      });
+    </script>
 </body>
 
 </html>

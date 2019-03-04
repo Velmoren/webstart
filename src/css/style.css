@@ -43,6 +43,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Cyrl 700';
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -59,6 +60,10 @@ img {
 
 .input:focus {
   border: 1px solid #ffd200;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -393,6 +398,7 @@ img {
   line-height: 35px;
   margin-bottom: 20px;
   margin-top: -8px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -637,11 +643,92 @@ img {
   height: 60px;
   opacity: 0.5;
   position: fixed;
-  bottom: 50px;
+  bottom: 25px;
   right: 25px;
   display: none;
   text-indent: -9999px;
   background: url("../img/scroll/icon_top.png") no-repeat;
   background-size: contain;
+  z-index: 100;
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 11px;
+  margin-bottom: 92px;
+  color: #333333;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 700;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .portfolio__title {
+    margin-top: -10px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .portfolio__arrows {
+    margin-top: 40px;
+  }
+  .portfolio .slider {
+    margin: auto;
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__title {
+    margin-top: -10px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .portfolio__arrows {
+    margin-top: 32px;
+  }
+  .portfolio .slider {
+    margin: auto;
+    margin-top: -52px;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .portfolio__title {
+    margin-top: -15px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .portfolio__arrows {
+    margin-top: 28px;
+  }
+  .slider {
+    max-width: 246px;
+    margin: auto;
+    margin-top: -52px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
