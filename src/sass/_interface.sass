@@ -1,7 +1,7 @@
 *
   box-sizing: border-box
 body 
-  font-family: 'Museo Sans Cyrl 300'
+  +normal
 img 
   max-width: 100%
 .container
@@ -19,11 +19,12 @@ img
 .section
   padding: 83px 0
   &-title
+    max-width: 500px
     font-size: 24px;
-    font-family: 'Museo Sans Cyrl 700'
-    font-weight: 700
+    +bolder
     text-align: center
   &-subtitle
+    display: block
     font-size: 16px;
 .input 
   border: 1px solid $border-input
