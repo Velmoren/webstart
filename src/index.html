@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,7 +26,8 @@
             <a href="tel:+74954225131" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="button">Перезвоните мне</button>
+          <button class="button navbar__button wow pulse" data-wow-delay="5s" data-wow-iteration="100"
+            data-wow-duration="1s" id="button">Перезвоните мне</button>
           <!-- /.button navbar__button -->
         </div>
         <!-- /.navbar__info -->
@@ -41,9 +43,9 @@
     <div class="container">
       <div class="hero-block">
         <div class="hero-text">
-          <h1 class="hero-text__title">Внутренняя отделка
+          <h1 class="hero-text__title wow flipInY">Внутренняя отделка
             помещений "под ключ"</h1>
-          <span class="hero-text__subtitle">с гарантией качества, прописанной в договоре</span>
+          <span class="hero-text__subtitle wow flipInY">с гарантией качества, прописанной в договоре</span>
           <ul class="hero-list">
             <li class="hero-list__item">
               <div class="hero-list__image"><img src="img/hero/clock.png" alt="clock"></div>
@@ -63,7 +65,7 @@
         </div>
         <!-- /.hero-text -->
         <div class="hero-image">
-          <img class="hero-image__img" src="img/hero/hero-image-1.png" alt="План квартиры">
+          <img class="hero-image__img wow fadeInRight" data-wow-delay="0.1s" src="img/hero/hero-image-2.png" alt="План квартиры">
         </div>
         <hero-image></hero-image>
       </div>
@@ -76,8 +78,8 @@
 
   <section class="offer section">
     <div class="container">
-      <div class="offer-block mov-1">
-        <h2 class="section-title offer__title">
+      <div class="offer-block">
+        <h2 class="section-title offer__title wow flipInY">
           Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
         </h2>
         <!-- /.section-title -->
@@ -85,14 +87,14 @@
           Оставьте заявку на разработку бесплатного дизайн-проекта!
         </span>
         <!-- /.section-subtitle -->
-        <form action="" class="form offer__form">
+        <form action="#" class="form offer__form">
           <input type="text" class="input offer__input" placeholder="Ваше имя">
           <input type="tel" class="input offer__input" placeholder="Ваш телефон">
         </form>
-        <button class="button offer__button" id="button__2">
+        <button class="button offer__button wow pulse" data-wow-delay="5s" data-wow-iteration="100" data-wow-duration="1s"
+          id="button__2">
           Получить бесплатный дизайн-проект
         </button>
-
         <div class="offer-info">
           <div class="offer-info__item">Наш менеджер перезвонит Вам
             в течение 60 секунд
@@ -112,7 +114,7 @@
 
   <section class="section portfolio">
     <div class="container">
-      <h2 class="section-title portfolio__title mov-2">
+      <h2 class="section-title portfolio__title wow flipInY">
         Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах
       </h2>
       <div class="slider owl-carousel">
@@ -131,10 +133,10 @@
       </div>
       <!-- /.slider -->
       <div class="arrows portfolio__arrows">
-        <div class="arrows__left mov-3">
+        <div class="arrows__left">
           <img src="img/portfolio/slider-arrow-1.png" alt="">
         </div>
-        <div class="arrows__right mov-4">
+        <div class="arrows__right">
           <img src="img/portfolio/slider-arrow-2.png" alt="">
         </div>
       </div>
@@ -146,16 +148,16 @@
 
   <section class="section price">
     <div class="container">
-      <div class="h2 section-title price__title mov-2">
+      <div class="h2 section-title price__title wow flipInY">
         У нас очень гибкая система скидок на комплексные работы!
       </div>
       <!-- /.h2 section-title price__title -->
-      <span class="section-subtitle price__subtitle">
+      <span class="section-subtitle price__subtitle wow flipInY">
         Прайс на наши услуги
       </span>
       <!-- /.section-subtitle price__subtitle -->
       <div class="cards">
-        <div class="card price__card">
+        <div class="card price__card wow fadeInLeft" data-wow-delay="0.1s">
           <div class="card__image"><img class="card__img" src="img/price/price-image-1.png" alt="иллюстрация"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -167,7 +169,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
           <div class="card__image"><img class="card__img" src="img/price/price-image-2.png" alt="иллюстрация"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -179,7 +181,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInRight" data-wow-delay="0.1s">
           <div class="card__image"><img class="card__img" src="img/price/price-image-3.png" alt="иллюстрация"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -191,7 +193,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInLeft" data-wow-delay="0.1s">
           <div class="card__image"><img class="card__img" src="img/price/price-image-4.png" alt="иллюстрация"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -203,7 +205,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
           <div class="card__image"><img class="card__img" src="img/price/price-image-5.png" alt="иллюстрация"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -215,7 +217,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInRight" data-wow-delay="0.1s">
           <div class="card__image"><img class="card__img" src="img/price/price-image-6.png" alt="иллюстрация"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -236,15 +238,15 @@
 
   <section class="section steps">
     <div class="container">
-      <h2 class="section-title steps__title mov-2">
+      <h2 class="section-title steps__title wow flipInY">
         Наши специалисты готовы выехать на замер в любое удобное для Вас время
       </h2>
       <!-- /.section-title steps__title -->
-      <span class="section-subtitle steps__subtitle">
+      <span class="section-subtitle steps__subtitle wow flipInY">
         5 шагов до ремонта
       </span>
-      <div class="steps-block">
-        <div class="step mov-5">
+      <div class="steps-block wow fadeInUp" data-wow-delay="0.2s">
+        <div class="step">
           <div class="step__image first-step__image">
             <img src="img/steps/steps-image-1.png" alt="Иконка">
           </div>
@@ -254,7 +256,7 @@
           </p>
           <!-- /.step__text -->
         </div>
-        <div class="step mov-5">
+        <div class="step">
           <div class="step__image">
             <img src="img/steps/steps-image-2.png" alt="Иконка">
           </div>
@@ -264,7 +266,7 @@
           </p>
           <!-- /.step__text -->
         </div>
-        <div class="step mov-5">
+        <div class="step">
           <div class="step__image">
             <img src="img/steps/steps-image-3.png" alt="Иконка">
           </div>
@@ -274,7 +276,7 @@
           </p>
           <!-- /.step__text -->
         </div>
-        <div class="step mov-5">
+        <div class="step">
           <div class="step__image">
             <img src="img/steps/steps-image-4.png" alt="Иконка">
           </div>
@@ -284,7 +286,7 @@
           </p>
           <!-- /.step__text -->
         </div>
-        <div class="step mov-5">
+        <div class="step">
           <div class="step__image">
             <img src="img/steps/steps-image-5.png" alt="Иконка">
           </div>
@@ -301,7 +303,63 @@
     <!-- /.container -->
   </section>
   <!-- /.section steps -->
-  
+
+  <section class="section materials">
+    <div class="container">
+      <h2 class="section-title materials__title">
+        Ремонт обойдется Вам дешевле, так как<br> мы используем качественные материалы по оптовым ценам
+      </h2>
+      <!-- /.section-title materials__title -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section materials -->
+
+  <section class="section material">
+    <div class="container">
+      <div class="material__cards">
+        <div class="material__card">
+          <div class="material__text material__text-first">
+            Поможем закупить все материалы<br> по оптовым ценам у проверенных<br> поставщиков
+          </div>
+          <!-- /.material__text -->
+          <div class="material__image">
+            <img src="img/material/material-image-1.png" alt="материалы">
+          </div>
+          <!-- /.material__image -->
+        </div>
+        <!-- /.material__card -->
+        <div class="material__card">
+          <div class="material__text material__text-second">
+            Мы дадим Вам <strong class="strong-text">максимальные скидки</strong><br> у наших партнеров для закупки<br>
+            материалов оптом
+          </div>
+          <!-- /.material__text -->
+          <div class="material__image">
+            <img src="img/material/material-image-2.png" alt="материалы">
+          </div>
+          <!-- /.material__image -->
+        </div>
+        <!-- /.material__card -->
+        <div class="material__card">
+          <div class="material__text material__text-last">
+            Все, что не сможете найти в городе -<br> поможем заказать <strong class="strong-text">у проверенных<br>
+              поставщиков</strong>
+          </div>
+          <!-- /.material__text -->
+          <div class="material__image">
+            <img src="img/material/material-image-3.png" alt="материалы">
+          </div>
+          <!-- /.material__image -->
+        </div>
+        <!-- /.material__card -->
+      </div>
+      <!-- /.material__cards -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section material -->
+
   <div class="wrapper" id="wrapper">
     <div class="modal" id="modal">
       <div class="modal-dialog">
@@ -321,8 +379,10 @@
   <script src="js/modal.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/animate.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
+    // инициализируем библиотеку WOW.js
+    new WOW().init();
     // скрипт слайдера
     // Переназначаем кнопки, отключив nav
     $('.arrows__right').click(function () {
@@ -350,46 +410,6 @@
           items: 3
         }
       }
-    });
-
-    /* добавляем скрипт анимации. Скрипт добавляет класс с анимацией элементу, с заданым классом и проигрывает
-    когда элемент с заданным классом находится на заданном расстоянии от верха экрана*/
-    $(window).scroll(function () {
-      $('.mov-1').each(function () {
-        var elemPos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (elemPos < topOfWindow + 600) {
-          $(this).addClass('rotate');
-        }
-      });
-      $('.mov-2').each(function () {
-        var elemPos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (elemPos < topOfWindow + 600) {
-          $(this).addClass('twist');
-        }
-      });
-      $('.mov-3').each(function () {
-        var elemPos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (elemPos < topOfWindow + 800) {
-          $(this).addClass('slideRight');
-        }
-      });
-      $('.mov-4').each(function () {
-        var elemPos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (elemPos < topOfWindow + 800) {
-          $(this).addClass('slideLeft');
-        }
-      });
-      $('.mov-5').each(function () {
-        var elemPos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (elemPos < topOfWindow + 800) {
-          $(this).addClass('slideUp');
-        }
-      });
     });
   </script>
 </body>

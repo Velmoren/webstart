@@ -5,6 +5,22 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,6 +33,11 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.strong-text {
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 700;
 }
 
 .container {
@@ -596,25 +617,11 @@ img {
   }
 }
 
-@font-face {
-  font-family: 'Museo Sans Cyrl 300';
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
-  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo Sans Cyrl 700';
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
-  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .wrapper {
+  position: fixed;
   display: none;
   overflow: hidden;
+  z-index: 9999;
 }
 
 .modal {
@@ -629,7 +636,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 101;
+  z-index: 9998;
   overflow: auto;
 }
 
@@ -641,6 +648,7 @@ img {
   min-height: 200px;
   background-color: #fff;
   padding: 40px;
+  z-index: 9997;
 }
 
 .modal-dialog__close {
@@ -1025,167 +1033,93 @@ img {
   }
 }
 
-@-webkit-keyframes slideLeft {
-  from {
-    margin-right: -800px;
-  }
-  to {
-    margin-right: 0;
+.materials {
+  background-color: #ffc000;
+}
+
+.materials__title {
+  margin: auto;
+  max-width: 950px;
+  font-size: 32px;
+  line-height: 50px;
+  font-family: 'Museo Sans Cyrl 300';
+  font-weight: 300;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .materials__title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 14px;
+    padding-bottom: 22px;
   }
 }
 
-@keyframes slideLeft {
-  from {
-    margin-right: -800px;
+.material__card {
+  max-width: 370px;
+  max-height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f7f7f7;
+}
+
+.material__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.material__text {
+  max-width: 290px;
+  margin-top: 18px;
+  margin-left: 26px;
+  line-height: 23px;
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .material__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  to {
-    margin-right: 0;
+  .material__text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .material__text-first {
+    margin-top: 2px;
+    margin-left: 19px;
+    margin-bottom: 35px;
+  }
+  .material__text-second {
+    margin-top: 44px;
+    margin-left: 22px;
+    margin-bottom: 25px;
+  }
+  .material__text-last {
+    margin-top: 41px;
+    margin-left: 17px;
+    margin-bottom: 36px;
   }
 }
 
-@-webkit-keyframes slideRight {
-  from {
-    margin-left: -800px;
-  }
-  to {
-    margin-left: 0;
-  }
-}
-
-@keyframes slideRight {
-  from {
-    margin-left: -800px;
-  }
-  to {
-    margin-left: 0;
-  }
-}
-
-@-webkit-keyframes rotateElem {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  20% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  40% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  60% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  80% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes rotateElem {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  20% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  40% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  60% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  80% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@-webkit-keyframes twistTitle {
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes twistTitle {
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@-webkit-keyframes slideUp {
-  from {
-    margin-top: 500px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    margin-top: 500px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-/* анимация для nav-bar, запускается при обновлении страницы */
-.navbar__info {
-  -webkit-animation: slideLeft 2s;
-          animation: slideLeft 2s;
-}
-
-.navbar__logo {
-  -webkit-animation: slideRight 2s;
-          animation: slideRight 2s;
-}
-
-/* анимация, запускаемая при прокрутке страницы до элемента */
-.slideLeft {
-  -webkit-animation: slideLeft 2s;
-          animation: slideLeft 2s;
-}
-
-.slideRight {
-  -webkit-animation: slideRight 2s;
-          animation: slideRight 2s;
-}
-
-.animateElem {
-  -webkit-animation: slideRight 2s;
-          animation: slideRight 2s;
-}
-
-.rotate {
-  -webkit-animation: rotateElem 2s;
-          animation: rotateElem 2s;
-}
-
-.twist {
-  -webkit-animation: twistTitle 2s;
-          animation: twistTitle 2s;
-}
-
-.slideUp {
-  -webkit-animation: slideUp 2s;
-          animation: slideUp 2s;
-}
+/* по подключениям, все цвета, шрифты и т.д. первыми подключаем,
+  затем интерфейс и потом уже по секциям, иначе если к примеру section-title есть в
+  интерфейсе и там есть font-size то он будет приоритетнее, если интерфейс будет в конце */
 /*# sourceMappingURL=style.css.map */

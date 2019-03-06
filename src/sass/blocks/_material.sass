@@ -1,0 +1,39 @@
+.material
+  &__card
+    max-width: 370px
+    max-height: 410px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: $background-gray-2
+    &s
+      display: flex
+      justify-content: space-between
+      margin: auto
+      margin-top: 20px
+  &__text
+    max-width: 290px
+    margin-top: 18px
+    margin-left: 26px
+    line-height: 23px
+
+@media (min-width: 320px) and (max-width: 567px)
+  .material
+    &__card
+      &s
+        flex-direction: column
+    &__text
+      font-size: 12px
+      line-height: 17px
+      &-first
+        margin-top: 2px
+        margin-left: 19px
+        margin-bottom: 35px
+      &-second
+        margin-top: 44px
+        margin-left: 22px
+        margin-bottom: 25px
+      &-last
+        margin-top: 41px
+        margin-left: 17px
+        margin-bottom: 36px

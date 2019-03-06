@@ -1,6 +1,8 @@
 .wrapper
+  position: fixed
   display: none
   overflow: hidden
+  z-index: 9999
 .modal
   position: fixed
   left: 0
@@ -11,7 +13,7 @@
   height: 100%
   background-color: rgba(#000, 0.5)
   display: flex
-  z-index: 101
+  z-index: 9998
   overflow: auto
   &-dialog
     position: relative
@@ -21,6 +23,7 @@
     min-height: 200px
     background-color: #fff
     padding: 40px
+    z-index: 9997
     &__close
       position: absolute
       top: 0
