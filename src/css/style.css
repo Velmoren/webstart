@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .webstart {
   font-size: 24px;
   font-weight: 400;
@@ -684,6 +685,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 13px;
 }
 
 .slider__image {
@@ -739,15 +741,18 @@ img {
 
 .price__title {
   margin: auto;
-  margin-bottom: 45px;
-  font-size: 28px;
-  line-height: 42px;
+  margin-bottom: 50px;
+  margin-top: 8px;
+  font-size: 30px;
+  line-height: 44px;
+  max-width: 550px;
 }
 
 .price__subtitle {
   margin-bottom: 57px;
+  margin-left: 5px;
   text-align: center;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .price__card {
@@ -759,7 +764,6 @@ img {
   border: 1px solid #e8e8e8;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  max-width: 350px;
 }
 
 .card__img {
@@ -776,13 +780,14 @@ img {
 }
 
 .card__text {
-  padding: 40px;
+  padding: 42px;
 }
 
 .card__title {
-  margin-top: -7px;
+  margin-top: -2px;
   margin-bottom: 28px;
-  font-size: 17px;
+  margin-left: 8px;
+  font-size: 18px;
 }
 
 .card__image {
@@ -806,6 +811,7 @@ img {
 .card__link {
   display: inline-block;
   text-decoration: none;
+  margin-left: 4px;
   font-family: 'Museo Sans Cyrl 700';
   font-weight: 700;
   color: #333333;
@@ -841,18 +847,17 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
-  width: 1100px;
 }
 
 @media (max-width: 1260px) {
   .cards {
-    max-width: 750px;
+    min-width: 750px;
   }
 }
 
 @media (max-width: 768px) {
   .cards {
-    max-width: 100%;
+    min-width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -879,7 +884,7 @@ img {
     margin-bottom: 12px;
   }
   .card__link {
-    font-size: 15px;
+    font-size: 16px;
     margin-right: 3px;
   }
   .cards {
@@ -896,7 +901,7 @@ img {
 
 .step:after {
   content: "";
-  width: 62px;
+  width: 70px;
   height: 25px;
   position: absolute;
   background: url("../img/steps/steps-arrow.png") no-repeat center;
@@ -923,23 +928,30 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .step__text {
   font-size: 14px;
   max-width: 155px;
   margin: auto;
+  line-height: 20px;
 }
 
 .steps__title {
   margin: auto;
-  margin-bottom: 59px;
+  margin-bottom: 49px;
+  margin-top: -42px;
+  max-width: 655px;
+  line-height: 45px;
+  font-size: 30px;
 }
 
 .steps__subtitle {
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 69px;
+  margin-left: 4px;
+  font-size: 20px;
 }
 
 .steps-block {
@@ -948,6 +960,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 200px;
 }
 
 @media (max-width: 1200px) {
@@ -973,11 +986,202 @@ img {
   .step:after {
     display: none;
   }
+  .steps__title {
+    font-size: 24px;
+  }
   .steps-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .step__image {
+    margin-bottom: 18px;
+  }
+  .step__text {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: -1px;
+  }
+  .steps__title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: -78px;
+    margin-bottom: 26px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    margin-bottom: 33px;
+  }
+  .first-step__image {
+    margin-bottom: 16px;
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  from {
+    margin-right: -800px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    margin-right: -800px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    margin-left: -800px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    margin-left: -800px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes rotateElem {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateElem {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes twistTitle {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes twistTitle {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    margin-top: 500px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    margin-top: 500px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+/* анимация для nav-bar, запускается при обновлении страницы */
+.navbar__info {
+  -webkit-animation: slideLeft 2s;
+          animation: slideLeft 2s;
+}
+
+.navbar__logo {
+  -webkit-animation: slideRight 2s;
+          animation: slideRight 2s;
+}
+
+/* анимация, запускаемая при прокрутке страницы до элемента */
+.slideLeft {
+  -webkit-animation: slideLeft 2s;
+          animation: slideLeft 2s;
+}
+
+.slideRight {
+  -webkit-animation: slideRight 2s;
+          animation: slideRight 2s;
+}
+
+.animateElem {
+  -webkit-animation: slideRight 2s;
+          animation: slideRight 2s;
+}
+
+.rotate {
+  -webkit-animation: rotateElem 2s;
+          animation: rotateElem 2s;
+}
+
+.twist {
+  -webkit-animation: twistTitle 2s;
+          animation: twistTitle 2s;
+}
+
+.slideUp {
+  -webkit-animation: slideUp 2s;
+          animation: slideUp 2s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,4 +13,26 @@
 @import 'blocks/_portfolio.sass'
 @import 'blocks/_price.sass'
 @import 'blocks/_steps.sass'
+@import '_animations.sass'
+
+/* анимация для nav-bar, запускается при обновлении страницы */
+.navbar
+  &__info
+    animation: slideLeft 2s
+.navbar
+  &__logo
+    animation: slideRight 2s
+/* анимация, запускаемая при прокрутке страницы до элемента */
+.slideLeft
+  animation: slideLeft 2s
+.slideRight
+  animation: slideRight 2s
+.animateElem
+  animation: slideRight 2s
+.rotate
+  animation: rotateElem 2s
+.twist
+  animation: twistTitle 2s
+.slideUp
+  animation: slideUp 2s
 

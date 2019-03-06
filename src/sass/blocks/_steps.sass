@@ -4,7 +4,7 @@
   text-align: center
   &:after
     content: ""
-    width: 62px
+    width: 70px
     height: 25px
     position: absolute
     background: url('../img/steps/steps-arrow.png') no-repeat center
@@ -22,21 +22,29 @@
     justify-content: center
     align-items: center
     margin: auto
-    margin-bottom: 30px
+    margin-bottom: 26px
   &__text
     font-size: 14px
     max-width: 155px
     margin: auto
+    line-height: 20px
   &s
     &__title
       margin: auto
-      margin-bottom: 59px
+      margin-bottom: 49px
+      margin-top: -42px
+      max-width: 655px
+      line-height: 45px
+      font-size: 30px
     &__subtitle
       text-align: center
-      margin-bottom: 58px
+      margin-bottom: 69px
+      margin-left: 4px
+      font-size: 20px
     &-block
       display: flex
       flex-wrap: wrap
+      padding-bottom: 200px
 @media (max-width: 1200px)
   .step
     margin-bottom: 30px
@@ -52,5 +60,30 @@
     &:after
       display: none
     &s
+      &__title
+        font-size: 24px
       &-block
         flex-direction: column
+@media (min-width: 320px) and (max-width: 567px)
+  .step
+    &__image
+      margin-bottom: 18px
+    &__text
+      font-size: 12px
+      line-height: 17px
+      margin-bottom: -1px
+    &s
+      &__title
+        font-size: 18px
+        line-height: 21px
+        margin-top: -78px
+        margin-bottom: 26px
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 33px
+  .first
+    &-step
+      &__image
+        margin-bottom: 16px
+      &__text
+        
