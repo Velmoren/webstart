@@ -10,17 +10,20 @@
     color: $text-color
     font-size: 30px
     line-height: 45px
+    max-width: 800px
     +bolder
   &__arrows
     max-width: 120px
     margin: auto
-    margin-top: 68px
+    margin-top: 50px
     display: flex
     justify-content: space-between
     margin-bottom: 13px
 .slider
   &__image
     margin: auto
+  &__item
+    max-width: 370px
 
 @media (max-width: 1200px)
   .portfolio
@@ -48,7 +51,7 @@
 @media (min-width: 320px) and (max-width: 567px)
   .portfolio
     &__title
-      margin-top: -15px
+      margin-top: -19px
       font-size: 18px
       line-height: 22px
     &__arrows
@@ -57,6 +60,9 @@
     max-width: 246px
     margin: auto
     margin-top: -52px
+    &__item
+      margin: auto
+      max-width: 246px
 
 
     
