@@ -95,6 +95,9 @@ img {
   .container {
     width: 740px;
   }
+  .button:hover {
+    background-color: #ffd200;
+  }
 }
 
 @media (max-width: 768px) {
