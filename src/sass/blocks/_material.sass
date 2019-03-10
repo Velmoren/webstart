@@ -4,6 +4,7 @@
     height: 410px
     display: flex
     flex-direction: column
+    justify-content: space-between
     background-color: $background-gray-2
     &s
       display: flex
@@ -14,7 +15,10 @@
     max-width: 290px
     margin-top: 18px
     margin-left: 26px
+    margin-bottom: 0
     line-height: 23px
+    +normal
+    font-size: 16px
 @media (max-width: 1200px)
   .material
     &__card

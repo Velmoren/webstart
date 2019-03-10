@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52711951, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52711951" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+  <!-- подключаем API Yandex.map -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<AMkVg1wBAAAAcDLheQIDEBBHuiL7a9Xb2-PF-05UeP9TdOYAAAAAAAAAAADXxn1ixG8u16pYNoCEq_dtkJ_rcQ ==>&lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -27,7 +32,7 @@
           </div>
           <!-- /.navbar__contacts -->
           <button class="button navbar__button wow pulse" data-wow-delay="5s" data-wow-iteration="100"
-            data-wow-duration="1s" id="button">Перезвоните мне</button>
+            data-wow-duration="1s" onclick="ym(52711951, 'reachGoal', 'button'); return true;" id="button">Перезвоните мне</button>
           <!-- /.button navbar__button -->
         </div>
         <!-- /.navbar__info -->
@@ -87,21 +92,21 @@
           Оставьте заявку на разработку бесплатного дизайн-проекта!
         </span>
         <!-- /.section-subtitle -->
-        <form action="#" class="form offer__form">
-          <input type="text" class="input offer__input" placeholder="Ваше имя">
-          <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+        <form action="#1" method="POST" onsubmit="ym(52711951, 'reachGoal', 'form-offer'); return true;" class="form offer__form" id="offer-form">
+          <input type="text" name="username" class="input offer__input" required placeholder="Ваше имя">
+          <input type="tel" name="phone" class="input offer__input phone" required placeholder="Ваш телефон">
+          <button type="submit" class="button offer__button wow pulse" data-wow-delay="5s" data-wow-iteration="100" data-wow-duration="1s"
+            id="button__2">
+            Получить бесплатный дизайн-проект
+          </button>
         </form>
-        <button class="button offer__button wow pulse" data-wow-delay="5s" data-wow-iteration="100" data-wow-duration="1s"
-          id="button__2">
-          Получить бесплатный дизайн-проект
-        </button>
         <div class="offer-info">
           <div class="offer-info__item">Наш менеджер перезвонит Вам
             в течение 60 секунд
           </div>
           <div class="offer-info__item">
             <span class="offer-info__text">или перезвоните нам сами</span>
-            <span class="offer-info__tel">+7 (495) 42-251-31</span>
+            <span class="offer-info__tel"><a href="tel:+7(495)42-251-31" class="offer-info__phone">+7 (495) 42-251-31</a></span>
           </div>
         </div>
         <!-- /.form offer_form -->
@@ -319,9 +324,9 @@
     <div class="container">
       <div class="material__cards">
         <div class="material__card">
-          <div class="material__text material__text-first">
+          <h3 class="material__text material__text-first">
             Поможем закупить все материалы<br> по оптовым ценам у проверенных<br> поставщиков
-          </div>
+          </h3>
           <!-- /.material__text -->
           <div class="material__image">
             <img src="img/material/material-image-1.png" alt="материалы">
@@ -330,10 +335,10 @@
         </div>
         <!-- /.material__card -->
         <div class="material__card">
-          <div class="material__text material__text-second">
+          <h3 class="material__text material__text-second">
             Мы дадим Вам <strong class="strong-text">максимальные скидки</strong><br> у наших партнеров для закупки<br>
             материалов оптом
-          </div>
+          </h3>
           <!-- /.material__text -->
           <div class="material__image">
             <img src="img/material/material-image-2.png" alt="материалы">
@@ -342,10 +347,10 @@
         </div>
         <!-- /.material__card -->
         <div class="material__card">
-          <div class="material__text material__text-last">
+          <h3 class="material__text material__text-last">
             Все, что не сможете найти в городе -<br> поможем заказать <strong class="strong-text">у проверенных<br>
               поставщиков</strong>
-          </div>
+          </h3>
           <!-- /.material__text -->
           <div class="material__image">
             <img src="img/material/material-image-3.png" alt="материалы">
@@ -425,7 +430,8 @@
             </li>
             <li class="interview-list__item">
               <span class="interview-list__counter interview-list__counter-third">3.</span>
-              <span class="interview-list__text interview-list__text-third">Где находится помещение, в котором будет производиться ремонт?</span>
+              <span class="interview-list__text interview-list__text-third">Где находится помещение, в котором будет
+                производиться ремонт?</span>
             </li>
             <li class="interview-list__item">
               <span class="interview-list__counter">4.</span>
@@ -437,12 +443,12 @@
         <div class="form brif__form">
           <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
           <span class="form__subtitle">Для этого заполните форму ниже</span>
-          <form action="#" id="brif-form">
-            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+          <form action="#2" method="POST" onsubmit="ym(52711951, 'reachGoal', 'form-brif'); return true;" class="brif-form" id="brif-form">
+            <input type="text" name="username" class="input brif__input" required placeholder="Ваше имя">
             <!--  required-обязательность minlength="2" maxlength="15"  -->
-            <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
-            <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
-            <button class="button brif__button">Рассчитать стоимость</button>
+            <input type="tel" name="phone" class="input brif__input phone" required placeholder="Ваш телефон">
+            <input type="email" name="email" class="input brif__input" required placeholder="Ваш email">
+            <button type="submit" class="button brif__button">Рассчитать стоимость</button>
             <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
           </form>
         </div>
@@ -453,6 +459,39 @@
     <!-- /.container -->
   </section>
   <!-- /.section brif -->
+
+  <footer class="footer">
+    <div class="map" id="map"></div>
+    <!-- не засовываем в контейнер для того, чтоб он был вне контейнера и карта занимала ровно 50% -->
+    <!-- /.map -->
+    <div class="container">
+      <div class="contacts-block">
+        <div class="contacts">
+          <h3 class="contacts__title">
+            Приезжайте к нам в гости!<br> Проконсультируем Вас<br>  по всем вопросам ремонта
+          </h3>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon"><img src="img/footer/footer-image-1.png" alt=""></span>
+              <span class="contacts-list__text">г. Москва<br> <strong class="strong-text"> ул. Ленинга, д. 10,<br> корпус 2, оф. 308</strong></span>
+            </li>
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon"><img src="img/footer/footer-image-2.png" alt=""></span>
+              <span class="contacts-list__text">Режим работы:<br><strong class="strong-text"> с 9:00 до 18:00</strong></span>
+            </li>
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon"><img src="img/footer/footer-image-3.png" alt=""></span>
+              <span class="contacts-list__text">Телефон:<br> <a href="tel:+7(495)42-251-31" class="contacts-list__link"><strong class="strong-text">+ 7 (495) 42-251-31</strong></a></span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.contacts -->
+      </div>
+      <!-- /.contacts-block -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
 
   <div class="wrapper" id="wrapper">
     <div class="modal" id="modal">
@@ -468,22 +507,47 @@
   <a href="#" class="scrollup">Наверх</a>
 
   <!-- <script src="js/main.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/maps.js"></script>
   <script>
     // инициализируем библиотеку WOW.js
     new WOW().init();
 
     $(document).ready(function () {
-      /* смена класса error по заданному id */
+     
+      /* валидация формы offer */
+      $('#offer-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          phone: {
+            required: true,
+          }
+        },
+        messages: {
+          phone: {
+            required: "Укажите телефон!"
+          },
+          username: {
+            required: "Укажите Ваше имя!",
+            minlength: jQuery.validator.format("Не менее {0} символов!"),
+            maxlength: jQuery.validator.format("Не более {0} символов!")
+          },
+        },
+        errorClass: "invalid",
+        errorElement: "div"
+      });
 
-      /* Валидация формы */
+      /* Валидация формы brif*/
       $('#brif-form').validate({
         rules: {
           username: {
@@ -497,7 +561,7 @@
           },
           phone: {
             required: true,
-            minlength: 11
+            minlength: 2
           }
         },
         messages: {
@@ -505,21 +569,23 @@
             required: "Укажите телефон!"
           },
           username: {
-            required: "Пожалуйста, укажите ваше имя",
-            minlength: jQuery.validator.format("Требуется не менее {0} символов!"),
-            maxlength: jQuery.validator.format("Требуется не более {0} символов!")
+            required: "Укажите Ваше имя!",
+            minlength: jQuery.validator.format("Не менее {0} символов!"),
+            maxlength: jQuery.validator.format("Не более {0} символов!")
           },
           email: {
-            required: "Заполните поле",
-            email: "Введите корректный email"
+            required: "Заполните поле!",
+            email: "Введите корректный email!"
           }
         },
         errorClass: "invalid",
-        errorElement: "div",
-        success: function (div) {
-          div.addClass("valid").text("Ok!")
-        }
+        errorElement: "div"
+        // success: function (div) {
+        //   div.addClass("valid").text("Ok!")
+        // } 
+        // оставил для дальнейшего использования!!!!!
       });
+
       /* маска номера телефона */
       $('.phone').mask('8 (999) 999-99-99');
       // скрипт слайдера
