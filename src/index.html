@@ -10,14 +10,42 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52711951, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52711951" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <script>
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(52711951, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      trackHash: true
+    });
+  </script>
+  <!-- /Yandex.Metrika counter -->
 
   <!-- подключаем API Yandex.map -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=30743603-2686-4016-9fe9-cd28f7e91923&lang=ru_RU" type="text/javascript"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=30743603-2686-4016-9fe9-cd28f7e91923&lang=ru_RU"></script>
+
 </head>
 
 <body>
+  <!-- по словам разработчиков на форуме, в heaв недолжно быть изображений, на них ругается валидатор. Для загрузки данного кода перед всем остальным 
+  размещаю данный код сюда -->
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/52711951" style="position:absolute; left:-9999px;" alt="">
+    </div>
+  </noscript>
+
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -32,7 +60,8 @@
           </div>
           <!-- /.navbar__contacts -->
           <button class="button navbar__button wow pulse" data-wow-delay="5s" data-wow-iteration="100"
-            data-wow-duration="1s" onclick="ym(52711951, 'reachGoal', 'button'); return true;" id="button">Перезвоните мне</button>
+            data-wow-duration="1s" onclick="ym(52711951, 'reachGoal', 'button'); return true;" id="button">Перезвоните
+            мне</button>
           <!-- /.button navbar__button -->
         </div>
         <!-- /.navbar__info -->
@@ -92,11 +121,12 @@
           Оставьте заявку на разработку бесплатного дизайн-проекта!
         </span>
         <!-- /.section-subtitle -->
-        <form action="#1" method="POST" onsubmit="ym(52711951, 'reachGoal', 'form-offer'); return true;" class="form offer__form" id="offer-form">
+        <form action="#1" method="POST" onsubmit="ym(52711951, 'reachGoal', 'form-offer'); return true;" class="form offer__form"
+          id="offer-form">
           <input type="text" name="username" class="input offer__input" required placeholder="Ваше имя">
           <input type="tel" name="phone" class="input offer__input phone" required placeholder="Ваш телефон">
-          <button type="submit" class="button offer__button wow pulse" data-wow-delay="5s" data-wow-iteration="100" data-wow-duration="1s"
-            id="button__2">
+          <button type="submit" class="button offer__button wow pulse" data-wow-delay="5s" data-wow-iteration="100"
+            data-wow-duration="1s" id="button__2">
             Получить бесплатный дизайн-проект
           </button>
         </form>
@@ -252,51 +282,51 @@
       </span>
       <div class="steps-block wow fadeInUp" data-wow-delay="0.2s">
         <div class="step">
-          <div class="step__image first-step__image">
+          <div class="step__image step__image-first">
             <img src="img/steps/steps-image-1.png" alt="Иконка">
           </div>
           <!-- /.step__image -->
-          <p class="step__text first-step__text">
+          <p class="step__text step__text-first">
             Вы звоните нам<br> или оставляете заявку
           </p>
           <!-- /.step__text -->
         </div>
         <div class="step">
-          <div class="step__image">
+          <div class="step__image step__image-second">
             <img src="img/steps/steps-image-2.png" alt="Иконка">
           </div>
           <!-- /.step__image -->
-          <p class="step__text">
+          <p class="step__text step__text-second">
             Согласуем удобное<br> для Вас время выезда специалиста на замер
           </p>
           <!-- /.step__text -->
         </div>
         <div class="step">
-          <div class="step__image">
+          <div class="step__image step__image-third">
             <img src="img/steps/steps-image-3.png" alt="Иконка">
           </div>
           <!-- /.step__image -->
-          <p class="step__text">
+          <p class="step__text step__text-third">
             Рассчитываем смету согласовываем<br> с Вами
           </p>
           <!-- /.step__text -->
         </div>
         <div class="step">
-          <div class="step__image">
+          <div class="step__image step__image-fourth">
             <img src="img/steps/steps-image-4.png" alt="Иконка">
           </div>
           <!-- /.step__image -->
-          <p class="step__text">
+          <p class="step__text step__text-fourth">
             Подписываем договор закупаем материал<br> по оптовым ценам
           </p>
           <!-- /.step__text -->
         </div>
         <div class="step">
-          <div class="step__image">
+          <div class="step__image step__image-fifth">
             <img src="img/steps/steps-image-5.png" alt="Иконка">
           </div>
           <!-- /.step__image -->
-          <p class="step__text">
+          <p class="step__text step__text-fifth">
             Выполняем ремонт<br> в указанные сроки
           </p>
           <!-- /.step__text -->
@@ -443,7 +473,8 @@
         <div class="form brif__form">
           <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
           <span class="form__subtitle">Для этого заполните форму ниже</span>
-          <form action="#2" method="POST" onsubmit="ym(52711951, 'reachGoal', 'form-brif'); return true;" class="brif-form" id="brif-form">
+          <form action="#2" method="POST" onsubmit="ym(52711951, 'reachGoal', 'form-brif'); return true;" class="brif-form"
+            id="brif-form">
             <input type="text" name="username" class="input brif__input" required placeholder="Ваше имя">
             <!--  required-обязательность minlength="2" maxlength="15"  -->
             <input type="tel" name="phone" class="input brif__input phone" required placeholder="Ваш телефон">
@@ -468,12 +499,13 @@
       <div class="contacts-block">
         <div class="contacts">
           <h3 class="contacts__title">
-            Приезжайте к нам в гости!<br> Проконсультируем Вас<br>  по всем вопросам ремонта
+            Приезжайте к нам в гости!<br> Проконсультируем Вас<br> по всем вопросам ремонта
           </h3>
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <span class="contacts-list__icon"><img src="img/footer/footer-image-1.png" alt=""></span>
-              <span class="contacts-list__text">г. Москва<br> <strong class="strong-text"> ул. Ленинга, д. 10,<br> корпус 2, оф. 308</strong></span>
+              <span class="contacts-list__text">г. Москва<br> <strong class="strong-text"> ул. Ленинга, д. 10,<br>
+                  корпус 2, оф. 308</strong></span>
             </li>
             <li class="contacts-list__item">
               <span class="contacts-list__icon"><img src="img/footer/footer-image-2.png" alt=""></span>
@@ -481,7 +513,8 @@
             </li>
             <li class="contacts-list__item">
               <span class="contacts-list__icon"><img src="img/footer/footer-image-3.png" alt=""></span>
-              <span class="contacts-list__text">Телефон:<br> <a href="tel:+7(495)42-251-31" class="contacts-list__link"><strong class="strong-text">+ 7 (495) 42-251-31</strong></a></span>
+              <span class="contacts-list__text">Телефон:<br> <a href="tel:+7(495)42-251-31" class="contacts-list__link"><strong
+                    class="strong-text">+ 7 (495) 42-251-31</strong></a></span>
             </li>
           </ul>
         </div>
@@ -520,7 +553,7 @@
     new WOW().init();
 
     $(document).ready(function () {
-     
+
       /* валидация формы offer */
       $('#offer-form').validate({
         rules: {

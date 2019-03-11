@@ -322,11 +322,11 @@ img {
   }
   .hero-text__title {
     width: 70%;
-    text-align: left;
+    text-align: center;
   }
   .hero-text__subtitle {
     width: 70%;
-    text-align-last: left;
+    text-align: center;
   }
 }
 
@@ -1047,12 +1047,38 @@ img {
 }
 
 @media (min-width: 320px) and (max-width: 567px) {
-  .step__image {
-    margin-bottom: 24px;
+  .step__image-first {
+    margin-bottom: 19px;
+  }
+  .step__image-second {
+    margin-bottom: 29px;
+  }
+  .step__image-third {
+    margin-bottom: 28px;
+  }
+  .step__image-fourth {
+    margin-bottom: 26px;
+  }
+  .step__image-fifth {
+    margin-bottom: 26px;
   }
   .step__text {
     font-size: 12px;
-    line-height: 17px;
+    line-height: 16px;
+  }
+  .step__text-first {
+    margin-bottom: 0;
+  }
+  .step__text-second {
+    margin-bottom: -2px;
+  }
+  .step__text-third {
+    margin-bottom: -1px;
+  }
+  .step__text-fourth {
+    margin-bottom: -1px;
+  }
+  .step__text-fifth {
     margin-bottom: -1px;
   }
   .steps__title {
@@ -1068,9 +1094,6 @@ img {
   .steps-block {
     padding: 0;
     margin-bottom: -6px;
-  }
-  .first-step__image {
-    margin-bottom: 18px;
   }
 }
 
